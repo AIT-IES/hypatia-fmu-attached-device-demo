@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<fmiModelDescription fmiVersion="2.0" generationDateAndTime="2025-02-04T09:17:50Z" generationTool="Simulink (R2024a)" guid="{18b12dbc-68ba-b20d-1347-6bbb532e3d53}" modelName="integrate" numberOfEventIndicators="0" variableNamingConvention="structured" version="15.3">
+  <CoSimulation canBeInstantiatedOnlyOncePerProcess="false" canGetAndSetFMUstate="false" canHandleVariableCommunicationStepSize="true" canNotUseMemoryManagementFunctions="true" canSerializeFMUstate="false" modelIdentifier="integrate"/>
+  <DefaultExperiment startTime="0" stepSize="1e-05" stopTime="3"/>
+  <VendorAnnotations>
+    <Tool name="Simulink Coder">
+    </Tool>
+  </VendorAnnotations>
+  <ModelVariables>
+    <ScalarVariable causality="input" description="k" name="k" valueReference="0" variability="continuous">
+      <Real start="1.0"/>
+      <!--Index = 1-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="x" initial="calculated" name="x" valueReference="1" variability="continuous">
+      <Real/>
+      <!--Index = 2-->
+    </ScalarVariable>
+    <ScalarVariable causality="independent" description="time" name="time" valueReference="2" variability="continuous">
+      <Real/>
+      <!--Index = 3-->
+    </ScalarVariable>
+  </ModelVariables>
+  <ModelStructure>
+    <Outputs>
+      <Unknown index="2"/>
+      <Unknown index="3"/>
+    </Outputs>
+    <InitialUnknowns>
+      <Unknown index="2"/>
+      <Unknown index="3"/>
+    </InitialUnknowns>
+  </ModelStructure>
+</fmiModelDescription>
