@@ -22,12 +22,12 @@ client_send_callback(uint64_t from, uint64_t to) {
 
 void 
 client_receive_callback(string payload, uint64_t from, uint64_t to) {
-    cout << "[Client " << from << "] Receieved message from device " << to << ": " << payload << endl;
+    cout << "[Client " << from << "] Received message from device " << to << ": " << payload << endl;
 }
 
 string
 fmu_do_step_callback(Ptr<RefFMU> fmu, uint64_t nodeId, const string& payload, const double& time, const double& commStepSize) {
-    cout << "[Device " << nodeId << "] received message: " << payload << endl;
+    cout << "[Device " << nodeId << "] Received message: " << payload << endl;
 
     // Call the default callback implementation for stepping the FMU model.
     FmuAttachedDevice::defaultDoStepCallbackImpl(fmu, nodeId, payload, time, commStepSize);
