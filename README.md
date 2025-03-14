@@ -30,7 +30,7 @@ The results from the simulation (log files, CSV output from FMU) will be written
 
 Run the example from the command line:
 ``` bash 
-./main_satnet_cosim_echo <hypatia-root-dir>"
+./main_satnet_cosim_echo <hypatia-root-dir>
 ```
 
 **NOTE**: The path to the Hypatia root directory can be relative to the current working directory or absolute
@@ -49,7 +49,7 @@ The results from the simulation (log files, CSV output from FMU and controller) 
 
 Run the example from the command line:
 ``` bash 
-./main_satnet_cosim_ctrl <hypatia-root-dir>"
+./main_satnet_cosim_ctrl <hypatia-root-dir>
 ```
 
 **NOTE**: The path to the Hypatia root directory can be relative to the current working directory or absolute
@@ -71,7 +71,7 @@ The results from the simulation (log files, CSV output from FMU) will be written
 
 Run the example from the command line:
 ``` bash 
-./main_terrestrial_cosim_echo <hypatia-root-dir>"
+./main_terrestrial_cosim_echo <hypatia-root-dir>
 ```
 
 **NOTE**: The path to the Hypatia root directory can be relative to the current working directory or absolute
