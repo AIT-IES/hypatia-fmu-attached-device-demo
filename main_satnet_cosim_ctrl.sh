@@ -16,7 +16,7 @@ CWD=${PWD}
 DEMO_DIR="$(dirname $(readlink -f $0))"
 
 # Path to simulation run directory
-RUN_DIR=${DEMO_DIR}/demo_run_dir # 
+RUN_DIR=${DEMO_DIR}/demo_satnet_run_dir # 
 
 # Path to log output  directory
 LOG_DIR=${RUN_DIR}/logs_ns3

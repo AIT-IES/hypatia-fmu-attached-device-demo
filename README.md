@@ -24,9 +24,9 @@ When running the simulation, you should see log messages similar to the followin
 [Client 1170] Receieved message from device 1252: Value of 'x' is 0.0316975
 ```
 
-The config files for running the example are in folder [`demo_run_dir`](./demo_run_dir/).
+The config files for running the satellite network example are in folder [`demo_satnet_run_dir`](./demo_satnet_run_dir/).
 The sources for the main executable are in folder [`src/main_satnet_cosim_echo`](./src/main_satnet_cosim_echo)
-The results from the simulation (log files, CSV output from FMU) will be written to folder `demo_run_dir/logs_ns3`
+The results from the simulation (log files, CSV output from FMU) will be written to folder `demo_satnet_run_dir/logs_ns3`
 
 Run the example from the command line:
 ``` bash 
@@ -43,9 +43,9 @@ Both the client and the device use XML-formatted messages for communication.
 
 ![results from controller example](./img/results-ctrl.png)
 
-The config files for running the example are in folder [`demo_run_dir`](./demo_run_dir/).
+The config files for running the example are in folder [`demo_satnet_run_dir`](./demo_satnet_run_dir/).
 The sources for the main executable are in folder [`src/main_satnet_cosim_ctrl`](./src/main_satnet_cosim_ctrl)
-The results from the simulation (log files, CSV output from FMU and controller) will be written to folder `demo_run_dir/logs_ns3`
+The results from the simulation (log files, CSV output from FMU and controller) will be written to folder `demo_satnet_run_dir/logs_ns3`
 
 Run the example from the command line:
 ``` bash 
