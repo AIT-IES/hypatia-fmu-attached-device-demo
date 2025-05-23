@@ -54,6 +54,25 @@ Run the example from the command line:
 
 **NOTE**: The path to the Hypatia root directory can be relative to the current working directory or absolute
 
+### Advanced Example: Sensor + Actuator + Controller
+
+In this example, a client uses a simple hysteresis controller to control the state of an FMU-attached device via a LEO network.
+In contrast to the previous example, the state of the FMU is read from one FMU-attached device (sensor), whereas the control inputs are applied by another FMU-attached device (actuator).
+The sensor and the actuator are devices at different network nodes, but they are attached to the same FMU.  
+The behavior of the client and the FMU-attached devices is implemented via dedicated classes (`DeviceController` and `DeviceLogic`).
+Both the client and the devices use XML-formatted messages for communication (same as in the previous example).
+
+The config files for running the example are in folder [`demo_satnet_shared_run_dir`](./demo_satnet_shared_run_dir/).
+The sources for the main executable are in folder [`src/main_satnet_cosim_shared`](./src/main_satnet_cosim_shared)
+The results from the simulation (log files, CSV output from FMU and controller) will be written to folder `demo_satnet_shared_run_dir/logs_ns3`
+
+Run the example from the command line:
+``` bash 
+./main_satnet_cosim_shared <hypatia-root-dir>
+```
+
+**NOTE**: The path to the Hypatia root directory can be relative to the current working directory or absolute
+
 ### Simple Example: Echo (terrestrial network)
 
 In this example, a client sends data to an FMU-attached device via a terrestrial network and awaits the response.
